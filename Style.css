@@ -1,0 +1,227 @@
+style>
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0px 40px;
+    background: rgba(12, 149, 234, 0.986);
+    color: #fff;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700px;
+    color:white ;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b894;
+}
+
+#Landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: white;
+    text-align: center;
+}
+
+html {scroll-behavior: smooth;}
+
+.scroll-down {margin-top: 3rem;
+animation: bounce 2s infinite;}
+
+@keyframes bounce {0% ,100%  {transform: translateY(0);} 50% {transform: translateY(10px);}}
+
+#Landing h1 {color : black;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#Landing p {color: rgba(100, 39, 2, 0.922);
+  font-size: 2.5rem;;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00b894;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #019875;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.profile-image img {
+    width: 250px;
+    border-radius: 2000px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    color: rgb(5, 44, 5);
+    margin-bottom: 15px;
+}
+
+#About {
+    padding: 50px;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+#About h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+ #About h3 { font-size: 40px;
+color: #097337;}
+
+ #About p {font-size: 20px;}
+ 
+.strengths-list {font-size: 20px;
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.strengths-list li {
+    margin: 10px 0;
+    font-size: ;
+}
+
+#Project {
+    padding: 60px;
+    background: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tag {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.project-info h2 {
+    margin-bottom: 10px;
+}
+ 
+.Skill_container {max-width: 800px;
+margin: 4rem auto 0;
+text-align: center;}
+
+.skills-list {display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+margin-top: 1.5rem;}
+
+.skills-tag {display: inline-block;
+  background: #000;
+color: white;
+padding: 5px 10px;
+border-radius: 10px;
+font-size: 14px;
+font-weight: 500;
+margin-left: 10px;}
+
+#Contact {
+    padding: 60px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+#Contact .cta-btn {
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+  }
